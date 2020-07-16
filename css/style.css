@@ -1,0 +1,106 @@
+/* This All Code Written By NorthFox Developers.
+All Code Available on Github: github.com/princu09/bstp-our-services
+This Code is free for all. No CopyRights. */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.service_heading {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.service_heading:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: auto;
+    border-bottom: 3px solid #3e4555;
+    transition: all 0.3s linear;
+}
+
+.service_heading:hover::after {
+    width: 10%;
+}
+
+.service {
+    color: #8d97ad;
+    font-weight: 300;
+}
+
+.service h1,
+.service h2,
+.service h3,
+.service h4,
+.service h5,
+.service h6 {
+    color: #3e4555;
+}
+
+.service h6 {
+    line-height: 22px;
+    font-size: 18px;
+}
+
+.service .font-weight-medium {
+    font-weight: 500;
+}
+
+.service .badge {
+    line-height: 15px;
+}
+
+.service .badge-info {
+    padding: 15px 20px;
+    background-color: darkorange;
+}
+
+.service .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+}
+
+.service .img-shadow {
+    box-shadow: 0 0 30px rgba(115, 128, 157, 0.3);
+}
+
+.service .wrap-service .img-hover {
+    transition: all 0.2s ease-in;
+}
+
+.service .wrap-service .img-hover:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+}
+
+.service .wrap-service .uneven-box {
+    margin-top: 100px;
+}
+
+.service .btn-sm {
+    border-radius: 25px;
+    padding: 6px 14px;
+    font-size: 16px;
+    background-color: darkorange;
+}
+
+.service .btn-sm:hover {
+    color: darkorange!important;
+    background-color: transparent;
+    border: 1px solid darkorange;
+}
+
+@media(max-width: 786px) {
+    .service .wrap-service .uneven-box {
+        margin-top: 10px;
+    }
+}
